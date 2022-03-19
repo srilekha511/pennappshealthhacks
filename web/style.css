@@ -1,98 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Inter;
-} 
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  height: 100%;
+}
 
 .header {
-    display:inline-block;
-    width: 100%;
-    height: auto;
-    line-height: 60px;
-    background-color: #28959C; /*DARK TEAL */
-    
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  line-height: 60px;
+  background-color: #28959c; /*DARK TEAL */
 }
 
 .logo {
-    margin-left: 1rem;
-    color: white;
-    text-decoration: none;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 .main-header {
-    text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .buttons {
-    text-align: center;
-    display:block;
-    padding: 20px;
-    text-decoration: none;
-    background-color: #6FB7BC; /*LIGHT TEAL */
-    margin: auto; 
-    color: white;
-    
+  text-align: center;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  background-color: #6fb7bc; /*LIGHT TEAL */
+  margin: auto;
+  color: white;
 }
 
 .button-container {
-    position: center;
-    justify-content: center;
-    align-items: center;
+  position: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
-    font-size: 30px; 
-    
+  font-size: 30px;
 }
 
 .left-div {
-    margin-left: 1.5rem;
-    text-align: left;
-    width: 50%;
+  margin-left: 1.5rem;
+  text-align: left;
+  width: 50%;
 }
 
 .right-div {
-    margin-right: 1.5rem;
-    text-align: right;
-    width: 50%;
+  margin-right: 1.5rem;
+  text-align: right;
+  width: 50%;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .body-text1 {
-    font-size: 22.5px;
+  font-size: 22.5px;
 }
 
 circle {
-    background: #6FB7BC;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: inline-block;
-    margin:5px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding:25px;
-    position:relative;
+  background: #6fb7bc;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 25px;
+  position: relative;
 }
 
 circle span {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 157px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 157px;
 }
 
 .center {
-    display: flex;
-    justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 
+.parallax {
+  background-image: url("tremor.png") !important;
+  min-height: 100%;
+  opacity: 80%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
