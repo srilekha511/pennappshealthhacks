@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'HK';
+    src: url('HKGrotesk-Bold.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+} 
+
+.header {
+    display:inline-block;
+    width: 100%;
+    height: auto;
+    line-height: 50px;
+    background-color: #28959C;
+    font-family: HK;
+}
+
+.logo {
+    margin-left: .5rem;
+}
+
+.a {
+
+}
+
