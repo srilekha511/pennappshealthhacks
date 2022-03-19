@@ -1,1 +1,1 @@
-# pennappshealthhacks
+# PennApps HealthHacks
