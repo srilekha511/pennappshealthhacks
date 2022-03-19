@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -42,5 +44,55 @@ body {
     align-items: center;
 }
 
+.subtitle {
+    font-size: 30px; 
+    
+}
 
+.left-div {
+    margin-left: 1.5rem;
+    text-align: left;
+    width: 50%;
+}
+
+.right-div {
+    margin-right: 1.5rem;
+    text-align: right;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.body-text1 {
+    font-size: 22.5px;
+}
+
+circle {
+    background: #6FB7BC;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    margin:5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding:25px;
+    position:relative;
+}
+
+circle span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 157px;
+}
+
+.center {
+    display: flex;
+    justify-content: center; 
+}
 
