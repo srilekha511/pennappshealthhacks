@@ -6,6 +6,9 @@ body {
   font-family: Inter;
   height: 100%;
 }
+html {
+  height: 100%;
+}
 
 .header {
   display: inline-block;
@@ -95,11 +98,18 @@ circle span {
 }
 
 .parallax {
-  background-image: url("tremor.png") !important;
-  min-height: 100%;
+  background-image: url("../assets/tremor.png") !important;
+  height: 100%;
   opacity: 80%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+img {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
