@@ -98,7 +98,8 @@ circle span {
 }
 
 .parallax {
-  background-image: url("../assets/tremor.png") !important;
+  background-image: url("..\static\tremor.png") !important;
+  /** background-image: url("../static/tremor.png") !important; **/
   height: 100%;
   opacity: 80%;
   background-attachment: fixed;
