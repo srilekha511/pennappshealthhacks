@@ -13,21 +13,25 @@
         </logo>
       </div>
       <div style="text-align: center">
-        <h1 style="font-size:40px">Detection</h1>
+        <h1 style="font-size:50px">Detection</h1>
       <form method="POST", action="{{url_for('prediction')}}">
-        <label>Biological Gender:</label>
+        <div class="selection">
+        <label style="font-size: 22.5px">Biological Gender:</label>
         <select name="gender" id="gender">
           <option value="female">Male</option>
-          <option value="male">Female</option></select
+          <option value="male">Female</option></div></select
         ><br /><br />
-        <label>Age:</label>
+      
+      <div class="selection">
+        <label style="font-size: 22.5px">Age:</label>
           <select name="age" id="age">
           <option value="young">0-40</option>
           <option value="41-50">41-50</option>
           <option value="51-60">51-60</option>
           <option value="61-70">61-70</option>
           <option value="71-80">71-80</option>
-          <option value="80+">80+</option></select
+          <option value="80+">80+</option></div></select
+          
         ><br /><br />
         <input type="submit", value='Next' style="font-size: 20px; width: 100px; padding: 10px; text-decoration: none; 
         background-color: #6FB7BC; margin: 10px; color: white; font-family: Inter; border: none;">
