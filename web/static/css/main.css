@@ -122,3 +122,20 @@ form {
   text-align: center;
   font-size: 1em;
 }
+
+.selection {
+  font-family: Inter;
+}
+
+.selection select {
+  display: hide;/*hide original SELECT element: */
+  font-size:22.5px;
+}
+
+selection {
+  outline: none;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
