@@ -12,6 +12,7 @@ html {
 
 .header {
   display: inline-block;
+  font-size: 20px;
   width: 100%;
   height: auto;
   line-height: 60px;
@@ -26,7 +27,7 @@ html {
 
 .main-header {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 6rem;
   margin-bottom: 1.5rem;
 }
 
@@ -34,15 +35,17 @@ html {
   text-align: center;
   display: block;
   padding: 20px;
+  line-height: 17.5px;
   text-decoration: none;
   background-color: #6fb7bc; /*LIGHT TEAL */
   margin: auto;
   color: white;
+  font-size: 20px;
 }
 
 .button-container {
   position: center;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
 }
 

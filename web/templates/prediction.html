@@ -12,22 +12,21 @@
         </logo>
       </div>
 
-      <!-- if NOT PARKINSON'S-->
-      {% if prediction == 0 %}
-      <h1>We detected you most likely do not have Parkinson's disease :) </h1>
+        {% if data == [1] %} 
+        <div style="text-align: center">
+          <h1 class="subtitle"> We detect you are at risk for Parkinson's.</h1>
+          <a class="buttons" style="height: 3rem; width: 300px; line-height: 22.5px" href="severity.html">Find Out How Severe Your <br> Parkinson's May Be</a>
+        {% endif %}
+        {% if data == [0] %} 
+        <h1 class="subtitle" style="margin:1.5rem; text-align:center">We detect you don't have Parkinson's.</h1> 
+        <p class="body-text1" style="margin:1.5rem; text-align:center">What If I Don’t Have Parkinsons?
+          You will know if you don't have Parkinson's if the website outputs that you do not exhibit the common symptoms of PD. 
+          PDetect can still help! Over time, PDetect can help you monitor possible symptoms of Parkinsons. Currently having 
+          limited treatments and no cure, the progression of Parkinson’s disease cannot be stopped. However, 
+          early detection can help as starting treatment in earlier stages of the disease can slow this progression. 
+          PDetect can also help you find your local medical facility in case you would like to consult your doctor as well.</p>
+        {% endif %}
 
-      <!-- PARKINSON'S-->
-      {% if prediction == 1 %}
-      <h1>We detected you most likely have Parkinson's disease :) </h1>
-
-      {% endif %}
-
-      <div style="text-align: center">
-        <h1>Prediction: Parkinson's/ Neurotypical</h1>
-        <h3>Phone Number:</h3>
-        <input type="text"></input><br><br>
-        <a href="#">Get a text message with treatment plans</a><br />
-        <h2>Thank you! You will be receiving information shortly.</h2>
       </div>
     </div>
   </body>

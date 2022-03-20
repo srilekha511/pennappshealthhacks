@@ -39,25 +39,45 @@ def index():
 def learn():
     return render_template('learn.html')
 
+@app.route("/prediction.html", endpoint='prediction')
+def prediction():
+    return render_template('/prediction.html')
 
+@app.route("/no_pd.html", endpoint='no_pd')
+def no_pd():
+    return render_template('no_pd.html')
 
+@app.route("/severity.html", endpoint='severity')
+def no_pd():
+    return render_template('severity.html')
+    
 
-
-
-@app.route('/predict', methods=['POST'])
+@app.route('/prediction.html', methods=['GET','POST'])
 def detection():
-    selectElement = document.querySelector('#gender')
-    output = selectElement.value
-    gender = document.querySelector('.output').textContent = output
-
-    selectElement1 = document.querySelector('#age')
-    output1 = selectElement.value
-    age = document.querySelector('.output').textContent = output
-   # age = request.form['age']
+    g = request.form['gender']
+    if g == 'female':
+        gender = 1
+    else:
+        gender = 0
+    a = request.form['age']
+    if a == 'young':
+        age = 0
+    else: 
+        if a == '41-50':
+            age = 1
+        if a == '51-60':
+            age = 2
+        if a == '61-70':
+            age = 3
+        if a == '71-80':
+            age = 4
+        if a =="80+":
+            age = 5
     arr = np.array([[gender, age]])
     pred = model.predict(arr)
-    # send data to prediction.html file
-    return render_template('prediction.html', data=pred)
+    print(pred)
+    return render_template('prediction.html',data=pred)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
