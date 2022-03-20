@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <title>Detection</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
   <style></style>
   <body>
     <div>
@@ -13,23 +13,25 @@
         </logo>
       </div>
       <div style="text-align: center">
-        <h1>Detection</h1>
+        <h1 style="font-size:35px">Detection</h1>
+      <form method="POST", action="{{url_for('detection')}}">
         <label>Biological Gender:</label>
-        <select name="age" id="age">
+        <select name="gender" id="gender">
           <option value="male">Male</option>
           <option value="female">Female</option></select
         ><br /><br />
         <label>Age:</label>
-        <select name="gender" id="gender">
+          <select name="age" id="age">
           <option value="young">0-40</option>
           <option value="41-50">41-50</option>
           <option value="51-60">51-60</option>
           <option value="61-70">61-70</option>
           <option value="71-80">71-80</option>
-          <option value="81-90">81-90</option>
-          <option value="91-100">91-100</option>
-          <option value="101">100+</option></select
+          <option value="80+">80+</option></select
         ><br /><br />
+        <input type="submit", value='Next' style="font-size: 20px; width: 100px; padding: 10px; text-decoration: none; 
+        background-color: #6FB7BC; margin: 10px; color: white; font-family: Inter; border: none;">
+      </form>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/p5.js"></script>
       <script
